@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-11-25T13:54:37+00:00",
+  "repository": "https://github.com/spvkgn/ggc-ips",
+  "description": "Google Global Cache IP ranges (AS15169) discovered via TLS 1.3 SNI scan.",
+  "countries": [
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "file": "by-country/ae.txt",
+      "prefixes": 19
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "file": "by-country/ar.txt",
+      "prefixes": 36
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "file": "by-country/au.txt",
+      "prefixes": 54
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "file": "by-country/be.txt",
+      "prefixes": 6
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "file": "by-country/bg.txt",
+      "prefixes": 39
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "file": "by-country/br.txt",
+      "prefixes": 182
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "file": "by-country/ca.txt",
+      "prefixes": 53
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "file": "by-country/ch.txt",
+      "prefixes": 6
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "file": "by-country/cl.txt",
+      "prefixes": 24
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "file": "by-country/co.txt",
+      "prefixes": 27
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "file": "by-country/cz.txt",
+      "prefixes": 12
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "file": "by-country/de.txt",
+      "prefixes": 264
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "file": "by-country/es.txt",
+      "prefixes": 42
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "file": "by-country/fi.txt",
+      "prefixes": 9
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "file": "by-country/fr.txt",
+      "prefixes": 96
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "file": "by-country/gb.txt",
+      "prefixes": 96
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong",
+      "file": "by-country/hk.txt",
+      "prefixes": 57
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "file": "by-country/ie.txt",
+      "prefixes": 9
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "file": "by-country/il.txt",
+      "prefixes": 6
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "file": "by-country/in.txt",
+      "prefixes": 228
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "file": "by-country/it.txt",
+      "prefixes": 36
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "file": "by-country/jp.txt",
+      "prefixes": 209
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "file": "by-country/ke.txt",
+      "prefixes": 12
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "file": "by-country/kr.txt",
+      "prefixes": 3
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "file": "by-country/mx.txt",
+      "prefixes": 80
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "file": "by-country/my.txt",
+      "prefixes": 27
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "file": "by-country/ng.txt",
+      "prefixes": 6
+    },
+    {
+      "code": "NL",
+      "name": "The Netherlands",
+      "file": "by-country/nl.txt",
+      "prefixes": 102
+    },
+    {
+      "code": "OM",
+      "name": "Oman",
+      "file": "by-country/om.txt",
+      "prefixes": 9
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "file": "by-country/ph.txt",
+      "prefixes": 12
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "file": "by-country/pl.txt",
+      "prefixes": 27
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "file": "by-country/pt.txt",
+      "prefixes": 9
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "file": "by-country/se.txt",
+      "prefixes": 21
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "file": "by-country/sg.txt",
+      "prefixes": 169
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "file": "by-country/th.txt",
+      "prefixes": 6
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan",
+      "file": "by-country/tw.txt",
+      "prefixes": 30
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "file": "by-country/us.txt",
+      "prefixes": 1493
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "file": "by-country/za.txt",
+      "prefixes": 27
+    }
+  ]
+}
