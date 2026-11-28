@@ -34,25 +34,16 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          set -euo pipefail
-
           mkdir -p bin
-
-          # naabu
-          gh api repos/projectdiscovery/naabu/releases/latest --jq '.tag_name' | sed 's/^v//' | \
-            xargs -I{} curl -sL "https://github.com/projectdiscovery/naabu/releases/latest/download/naabu_{}_linux_amd64.zip" -o /tmp/naabu.zip
-          unzip -oq /tmp/naabu.zip -d bin naabu
-
-          # tlsx
-          gh api repos/projectdiscovery/tlsx/releases/latest --jq '.tag_name' | sed 's/^v//' | \
-            xargs -I{} curl -sL "https://github.com/projectdiscovery/tlsx/releases/latest/download/tlsx_{}_linux_amd64.zip" -o /tmp/tlsx.zip
-          unzip -oq /tmp/tlsx.zip -d bin tlsx
-
+          # naabu tlsx
+          for tool in naabu tlsx; do
+            gh release download -R "projectdiscovery/$tool" -p "*_linux_amd64.zip" -O "/tmp/${tool}.zip" --clobber
+            unzip -oq "/tmp/${tool}.zip" -d bin "$tool"
+            rm -f "/tmp/${tool}.zip"
+          done
           # cidr-merger
-          curl -sL "https://github.com/zhanhb/cidr-merger/releases/latest/download/cidr-merger-linux-amd64" -o bin/cidr-merger
-
+          gh release download -R "zhanhb/cidr-merger" -p "cidr-merger-linux-amd64" -O "bin/cidr-merger" --clobber
           chmod +x bin/*
-          rm -f /tmp/naabu.zip /tmp/tlsx.zip
 
       - name: Download IPInfo country-ASN database
         env:
@@ -276,3 +267,11 @@ jobs:
           force_orphan: false
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+
+  keepalive:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - uses: liskin/gh-workflow-keepalive@v1
