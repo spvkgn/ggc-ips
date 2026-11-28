@@ -240,6 +240,8 @@ jobs:
                   "prefixes": len(lines),
               })
 
+          countries.sort(key=lambda c: (c["name"].casefold(), c["code"]))
+
           index = {
               "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
               "repository": f"https://github.com/{os.environ['GITHUB_REPOSITORY']}",
@@ -254,7 +256,8 @@ jobs:
 
       - name: Copy viewer
         if: hashFiles('out/by-country/*.txt') != ''
-        run: cp site/index.html out/index.html
+        run: |
+          cp site/index.html site/styles.css site/app.js out/
 
       - name: Publish to gh-pages
         if: hashFiles('out/by-country/*.txt') != ''
